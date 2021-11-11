@@ -1,42 +1,39 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class NewEmptyJUnitTest {
-    
-    Integrante operacion1 = new Integrante();
+    Integrante integrante = new Integrante();
     @Test
     public void testAlumno1(){
-        assertEquals(2, operacion1.metodo(2, 6));
+        assertEquals("Alumno", integrante.metodo(2, 1000));
     }
     @Test
     public void testAlumno2(){
-        assertEquals(2, operacion1.metodo(2, 3));
+        assertEquals("Alumno", integrante.metodo(2, 2043));
     }
     public void testMaestro1(){
-        assertEquals(1, operacion1.metodo(1, 34));
+        assertEquals("Maestro", integrante.metodo(1, 454));
     }
     @Test
     public void testMaestro2(){
-        assertEquals(1, operacion1.metodo(1, 54));
+        assertEquals("Maestro", integrante.metodo(1, 432));
     }
     //--------------------------------------------------------------------------
     
     public void testAlumno3(){
-        assertEquals(2, operacion1.metodo(1, 6));
+        assertEquals("Alumno", integrante.metodo(1, 6));
     }
     @Test
     public void testAlumno4(){
-        assertEquals(2, operacion1.metodo(4, -3));
+        assertEquals("Alumno", integrante.metodo(4, -3));
     }
     public void testMaestro3(){
-        assertEquals(1, operacion1.metodo(7, 1));
+        assertEquals("Maestro", integrante.metodo(7, 1));
     }
     @Test
     public void testMaestro4(){
-        assertEquals(1, operacion1.metodo(8, 0));
+        assertEquals("Maestro", integrante.metodo(8, 0));
     }
-    
-    
-    
+
     public NewEmptyJUnitTest() {
     }
 }
